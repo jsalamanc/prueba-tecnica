@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+* {
+  font-family: 'Sora', sans-serif !important;
+}
+.container {
+  margin: auto;
+  width: 96%;
+  max-width: 45rem;
+}
+
+.content {
+  & h1 {
+    @apply text-2xl md:text-4xl font-bold text-blue-600 hover:text-blue-700;
+  }
+  & p {
+    @apply leading-loose text-lg;
+  }
+  & a {
+    @apply text-blue-600 hover:text-blue-700;
+  }
+}
+
+.form-control {
+  width: 100% !important;
+}
+
+.pulse-button {
+  background-color: #ff0000;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+}
