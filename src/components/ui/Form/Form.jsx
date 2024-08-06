@@ -24,16 +24,25 @@ export const Form = () => {
          * update value of phone
          */
         setPhone(value);
+        console.log(value, country.format);
+        // Add the "+" symbol to the number if it is not present.
+        const formattedValue = value.startsWith('+') ? value : `+${value}`;
         /**
          * validate phone number
          */
-        const phoneNumber = parsePhoneNumberFromString(value, country.countryCode);
+        const phoneNumber = parsePhoneNumberFromString(formattedValue, country.countryCode);
         /**
          * update state isValid
          */
         setIsValid(phoneNumber ? phoneNumber.isValid() : false);
+        console.log('first', phoneNumber ? phoneNumber.isValid() : false)
     };
     const onSubmit = (data) => {
+        if (!phone) {
+            setIsValid(false);
+            alert('número invalido');
+            return;
+        }
         alert('Enviado exitosamente!')
         console.log(data);
     };
