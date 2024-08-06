@@ -38,7 +38,7 @@ export const Form = () => {
         console.log('first', phoneNumber ? phoneNumber.isValid() : false)
     };
     const onSubmit = (data) => {
-        if (!phone) {
+        if (!phone || !isValid) {
             setIsValid(false);
             alert('número invalido');
             return;
