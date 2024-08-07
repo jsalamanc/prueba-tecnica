@@ -6,6 +6,10 @@
 * {
   font-family: 'Sora', sans-serif !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 .container {
   margin: auto;
   width: 96%;

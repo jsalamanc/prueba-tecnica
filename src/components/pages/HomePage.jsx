@@ -5,7 +5,6 @@ import useSWR from 'swr';
 import DOMPurify from 'dompurify';
 import { DataTable } from '../ui/DataTable';
 import { Form } from '../ui/Form/Form';
-import { ThumbsUp } from 'lucide-react';
 import { CardComments } from '../ui/comments/CardComments';
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -25,7 +24,6 @@ export const HomePage = () => {
     /**
      * render HTML
      */
-    console.log(data);
     return (
         <div className="container pt-[15rem]">
             <div

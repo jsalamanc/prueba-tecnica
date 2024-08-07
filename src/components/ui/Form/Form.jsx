@@ -91,7 +91,7 @@ export const Form = () => {
                         <p className="text-[red]">Número de teléfono inválido</p>
                     )}
                     <div className="flex justify-center">
-                        <button className="bg-red-500 rounded-lg py-5 px-10 uppercase text-white pulse-button">
+                        <button id='registro' className="bg-red-500 rounded-lg py-5 px-10 uppercase text-white pulse-button">
                             registrese ahora
                         </button>
                     </div>

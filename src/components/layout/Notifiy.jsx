@@ -1,6 +1,7 @@
 'use client';
 
 import { X } from 'lucide-react';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 export const Notifiy = () => {
@@ -16,9 +17,11 @@ export const Notifiy = () => {
                                 Regístrate en Oil Profit y recibe 20% en bonificación sobre tu
                                 primera inversión.
                             </p>
-                            <button className="rounded-lg bg-red-500 p-2 text-white">
-                                Regístrate Ahora
-                            </button>
+                            <Link href='#registro'>
+                                <button className="rounded-lg bg-red-500 p-2 text-white">
+                                    Regístrate Ahora
+                                </button>
+                            </Link>
                         </div>
                         <button className="absolute top-0 right-2" onClick={handleNotify}>
                             <X />
