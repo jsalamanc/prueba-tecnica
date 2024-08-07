@@ -25,7 +25,7 @@ export const HomePage = () => {
      * render HTML
      */
     return (
-        <div className="container pt-[15rem]">
+        <div className="container pt-[10rem] md:pt-[15rem]">
             <div
                 className="content"
                 dangerouslySetInnerHTML={{ __html: cleanData(data?.metadata?.content) }}
