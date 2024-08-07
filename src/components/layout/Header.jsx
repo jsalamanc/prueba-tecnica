@@ -79,7 +79,7 @@ export const Header = () => {
                         </Link>
                     </ul>
                 </div>
-                <div className="relative flex justify-between items-center w-full p-4">
+                <div className="relative flex justify-start md:justify-between items-center w-full p-4">
                     <Link href='#registro'>
                         <span className="hidden md:block">@trecenoticiascr</span>
                     </Link>
